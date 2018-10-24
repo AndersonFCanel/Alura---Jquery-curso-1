@@ -1,0 +1,46 @@
+.campo-digitacao{
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+}
+
+.frase{
+    font-size: 20px;
+    text-align left;
+}
+
+.campo-desativado{
+    background-color: lightgray;
+}
+
+.icones{
+    vertical-align: middle;
+}
+
+
+
+/*
+Melhorando o feedback
+Iremos melhorar o feedback para o usuário mostrando uma borda verde ou vermelha.
+
+O primeiro passo é adicionar duas classes que representam a borda verde ou vermelha no nosso arquivo estilo.css:
+*/
+/*campo.on("input",function()){
+
+});
+*/
+.borda-verde {
+    border: 3px solid green;
+}
+
+.borda-vermelha {
+    border: 3px solid red;
+}
+
+.placar {
+    display: none;
+}
+
+body {
+    overflow: scroll;
+}

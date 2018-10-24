@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UFT-8">
+    <title>GAME DE DIGITAÇÃO</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--IMPORTANDO ICONES
+    Para utilizar os ícones, temos que adicionar uma tag <i> com as classes small (referente ao tamanho do ícone, há também os tamanhos tiny, medium e large) e material-icons. Dentro da tag nós colocamos o nome do ícone que queremos (a lista se encontra no site). Os ícones que utilizaremos para o contador do tamanho da frase e para o cronômetro são o description e query_builder, respectivamente. 
+    -->
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+</head>
+<body>
+ <div class="container">
+
+    <h1 class="center">DIGITGAME</h1>
+    <p class="frase center">Frase de teste, teste1</p>
+
+    <ul class="informacoes center">
+        <li>
+            <i class="small material-icons icones">description</i>
+            <span id="tamanho-frase">5</span> palavras
+        </li>
+        <li>
+            <i class="small material-icons icones">query_builder</i>
+            <span id="tempo-digitacao">10</span> segundos
+        </li>
+    </ul>
+
+    <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
+    <!--<button id="botao-reiniciar">Reiniciar Jogo</button>-->
+    <div class="botoes">
+        <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">restore</i>
+        </a>
+		<a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+    </div>
+
+    <ul class="center">
+        <li><span id="contador-caracteres">0</span> caracteres</li>
+        <li><span id="contador-palavras">0</span> palavras</li>
+    </ul>
+
+    <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<tr>
+                    <td>Padrao</td>
+                    <td>999</td>
+                    <td>
+                        <a href="#" class="botao-remover">
+                            <i class="small material-icons">delete</i>
+                        </a>
+                    </td>    
+                </tr>
+                <td>Usuario Exemplo</td>
+                </tbody>
+            </table>
+        </section>
+        </table>
+    </section>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+</body>
+</html>
